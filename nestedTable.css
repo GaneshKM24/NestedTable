@@ -1,0 +1,142 @@
+body{
+    padding: 30px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+  }
+
+  th,
+  td {
+    border: 1px solid #120f0f;
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .details-row {
+    display: none;
+    background-color: #f9f9f9;
+  }
+
+  .button {
+    padding: 5px 10px;
+    margin: 5px;
+    cursor: pointer;
+  }
+
+  .search-box {
+    margin-bottom: 20px;
+  }
+
+  .sticky-header th {
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+  }
+
+  .hover-row:hover {
+    background-color: #f0f0f0;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+  }
+
+  /* Modal Styles */
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(224, 201, 201, 0.4);
+    padding-top: 60px;
+  }
+
+  .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 40%;
+  }
+
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .form-group {
+    margin: 10px 0;
+  }
+
+  .sorting-dropdowns,
+  .filter-dropdowns {
+    display: inline-block;
+    margin-right: 10px;
+  }
+
+  .error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+  }
+  h2{
+    text-align: center;
+  }
+  .search-box input{
+    padding-left: 20px;
+    width: 250px;
+    height: 40px;
+    font-size: 18px;
+    border-radius: 5px;
+    outline: none;
+  }
+  #sortBy,#designationFilter,#sortOrder{
+    padding: 20px;
+    margin-bottom: 40px;
+    font-size: 16px; 
+    margin-right: 20px;
+    border-radius: 5px;
+  }
+  .button{
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: rgb(177, 182, 193);
+    color: white;
+    border-radius: 5px;
+  }
+  .pagination{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .pagination button{
+    padding: 20px 40px;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: rgb(177, 182, 193);
+    color: white;
+    border-radius: 5px;
+  }

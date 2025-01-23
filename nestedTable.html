@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Employee Information</title>
+  <link rel="stylesheet" href="./nestedTable.css">
+</head>
+
+<body>
+
+  <h2>Employee Information</h2>
+
+  <!-- Search Box -->
+  <div class="search-box">
+    <input type="text" id="searchInput" onkeyup="searchEmployees()" placeholder="Search for employees..."
+      aria-label="Search for employees" />
+  </div>
+
+  <!-- Sorting and Filter Dropdowns with Apply Button -->
+  <div class="sorting-dropdowns">
+    <select id="sortBy" aria-label="Sort by">
+      <option value="id">Sort By: Employee ID</option>
+      <option value="name">Sort By: Name</option>
+      <option value="date">Sort By: Date of Joining</option>
+    </select>
+  </div>
+
+  <div class="filter-dropdowns">
+    <select id="designationFilter" aria-label="Filter by Designation">
+      <option value="">Filter by Designation</option>
+      <option value="Software Engineer">Software Engineer</option>
+      <option value="HR Manager">HR Manager</option>
+      <option value="Marketing Specialist">Marketing Specialist</option>
+      <option value="Product Manager">Product Manager</option>
+      <option value="Sales Executive">Sales Executive</option>
+      <option value="Data Analyst">Data Analyst</option>
+    </select>
+  </div>
+
+  <select id="sortOrder" aria-label="Sort Order">
+    <option value="asc">Ascending</option>
+    <option value="desc">Descending</option>
+  </select>
+
+  <button class="button" onclick="applySortingAndFiltering()">Apply</button>
+
+  
+  <!-- Employee Table -->
+  <table>
+    <thead class="sticky-header">
+      <tr>
+        <th>Employee Name</th>
+        <th>Employee ID</th>
+        <th>Designation</th>
+        
+      </tr>
+    </thead>
+    <tbody id="employeeTableBody">
+      <!-- Employee rows will be inserted dynamically here -->
+    </tbody>
+  </table>
+
+  <!-- Pagination -->
+  <div class="pagination">
+    <button onclick="prevPage()" aria-label="Previous Page">Previous</button>
+    <button onclick="nextPage()" aria-label="Next Page">Next</button>
+  </div>
+
+  
+  <script src="./nestedTable.js"></script>
+</body>
+
+</html>
